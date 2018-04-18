@@ -10,7 +10,7 @@ Requirement :
  - My CoyoteProd Libsumo.Net Application (or other application able to change the IPAddress to connect to drone)
  - Windows PC (not mandatory)
  
- Requiered only to if you brick your jumping:
+ Required only if you brick your jumping:
  - Latest Firmware
  - USB Cable 
 
