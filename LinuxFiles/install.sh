@@ -20,14 +20,15 @@ cp -f  wpa_supplicant /bin
 # Copy Configuration. Be sure to modify to your network
 cp -f  wpa_supplicant.conf /etc
 
-# Copy dhcp client conf file (original default.script is bugus and this one correctely send Hostname)
+# Copy dhcp client conf file (original default.script is bogus)
 cp -f  clientmode.script /usr/share/udhcpc
 
 # Change configuration when user press once power button
 cp -f shortpress_1.sh /bin/onoffbutton
 
 # Cleanup
-# if all is ok, delete sources files
+# (todo)if all is ok,
+# then delete sources files
 rm clientmode.script
 rm wpa_supplicant.conf
 rm libcrypto.so.1.1
@@ -36,4 +37,4 @@ rm libssl.so.1.1
 rm wpa_cli
 rm wpa_passphrase
 rm wpa_supplicant
-rm  shortpress_1.sh
+rm shortpress_1.sh
