@@ -37,6 +37,7 @@ And you can use your favorite applications to pilot your drone and virtually rol
 Some notes:
  - Change the drone name to easily access it when it's connected to your network (nslookup)
  - It's compatible with eduroam network too
+ - Check Wiki to view how to compile your own wpa_supplicant for ARM51
  
 
 
