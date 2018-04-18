@@ -22,18 +22,22 @@ Installation:
  - Connect to Drone Wifi 
  - Connect to Drone with FTP
  - Go to internal_000
- - Createe folder wpa_supplicant
+ - Create folder wpa_supplicant
  - upload all files of this repository LinuxFiles folder
  - Connect to Drone with Telnet
  - Go to /data/ftp/internal_000/wpa_supplicant
  - Check that all file haves execute right (use chmode if not)
  - Execute ./install.sh
  
-Now when you press one time on the power button, the drone will begin the connection to your network.
-You can now :
+
+Now when you power On your drone it's in normal mode, it's work the same from stock with Parrot Application.
+But when you press one time on the power button, the drone will begin the connection to your network.
+And you can use your favorite applications to pilot your drone and virtually rolling where your network coverage go...
+
+Some notes:
  - Change the drone name to easily access it when it's connected to your network (nslookup)
  - It's compatible with eduroam network too
- - Use your favorite applications to pilot your drone and virtually rolling where your network coverage go...
+ 
 
 
 in case of problem with your drone... :
