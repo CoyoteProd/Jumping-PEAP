@@ -48,33 +48,34 @@ in case of problem with your drone... :
 Have fun... !
 
 
- If you Brick your Jumping :
-  - Remove Battery of jumping
-  - Connect your Jumping to USB
-  - Wait to Green LED
-  - Press 4 times on the power button
-  - Wait that a new driver come in DeviceManager
-  - Install Microsoft Remote RNDIS Driver
+If you Brick your Jumping :
+ - Remove Battery of jumping
+ - Connect your Jumping to USB
+ - Wait to Green LED
+ - Press 4 times on the power button
+ - Wait that a new driver come in DeviceManager
+ - Install Microsoft Remote RNDIS Driver
   
 [![Install Microsoft Remote RNDIS Driver][1]][1]
 [![enter image description here][2]][2]
 
-  - be sure to ping your device (by default 192.168.3.1), use ipconfig and set address manually if not
-  - Connect with Telnet on 192.168.3.1
-  - Modify  /etc/inetd.conf to allow FTP to start in root
+ - be sure to ping your device (by default 192.168.3.1), use ipconfig and set address manually if not
+ - Connect with Telnet on 192.168.3.1
+ - Modify  /etc/inetd.conf to allow FTP to start in root
 
     change `21 stream tcp nowait root ftpd ftpd -w /data/ftp`    
     to `21 stream tcp nowait root ftpd ftpd -w /`
-  - get the name in /bin/updater/productname file (for renaming the firmware file)
-  - restart ftp serveur or reboot and re-press 4 times on power button
+    
+ - get the name in /bin/updater/productname file (for renaming the firmware file)
+ - restart ftp serveur or reboot and re-press 4 times on power button
   
-  - download latest (or the same) firmware on Parrot site (be careful to download the firmware for your drone)
-  - rename the file in %productname%_update.plf (for night: jumpingsumo_update.plf)   
-  - Connect with FTP to 192.168.3.1  
-  - upload firmware in /update folder
-  - Wait 2 min (to be sure filesystem is flushed)
-  - Reboot and Wait
-  - It's all
+ - download latest (or the same) firmware on Parrot site (be careful to download the firmware for your drone)
+ - rename the file in %productname%_update.plf (for night: jumpingsumo_update.plf)   
+ - Connect with FTP to 192.168.3.1  
+ - upload firmware in /update folder
+ - Wait 2 min (to be sure filesystem is flushed)
+ - Reboot and Wait
+ - It's all
   
   [1]: https://i.stack.imgur.com/0IaqO.png
   [2]: https://i.stack.imgur.com/z0OqL.png
