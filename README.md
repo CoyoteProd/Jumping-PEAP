@@ -32,6 +32,7 @@ Installation:
 Now when you press one time on the power button, the drone will begin the connection to your network.
 You can now :
  - Change the drone name to easily access it when it's connected to your network (nslookup)
+ - It's compatible with eduroam network too
  - Use your favorite applications to pilot your drone and virtually rolling where your network coverage go...
 
 
