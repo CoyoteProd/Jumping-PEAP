@@ -38,6 +38,7 @@ Some notes:
  - Change the drone name to easily access it when it's connected to your network (nslookup)
  - It's compatible with eduroam network too
  - Check Wiki to view how to compile your own wpa_supplicant for ARM51
+ - Pay attention to `\n` endline that is mandatory for linux. Use a good text editor for editing files or `vi`directely on the drone. if you see `^M` that tell you are wrong...
  
 
 
