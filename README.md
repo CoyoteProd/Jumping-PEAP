@@ -1,7 +1,7 @@
 # Jumping-PEAP
 
 From longtime, I would to connect my Parrot jumping to my Enterprise network and Go everywhere in the building.
-"Unfortunately", all my enterprise wifi was WPA2 Enterprise (PEAP + MSVCHAPV2) wich is not available in stock firmware. 
+"Unfortunately", all my enterprise wifis was WPA2 Enterprise (PEAP + MSVCHAPV2) wich is not available in stock firmware. 
 
 But Now It's Possible:
 
@@ -30,7 +30,7 @@ Installation:
  - Execute ./install.sh
  
 
-Now when you power On your drone it's in normal mode, it's work the same from stock with Parrot Application.
+Now when you power On your drone is in normal mode, it's work the same from stock firmware with Parrot Application.
 But when you press one time on the power button, the drone will begin the connection to your network.
 And you can use your favorite applications to pilot your drone and virtually rolling where your network coverage go...
 
@@ -48,6 +48,8 @@ in case of problem with your drone... :
 Have fun... !
 
 
+----------
+
 If you Brick your Jumping :
  - Remove Battery of jumping
  - Connect your Jumping to USB
@@ -57,16 +59,16 @@ If you Brick your Jumping :
  - Install Microsoft Remote RNDIS Driver
   
 [![Install Microsoft Remote RNDIS Driver][1]][1]
-[![enter image description here][2]][2]
+[![Install Microsoft Remote RNDIS Driver][2]][2]
 
- - be sure to ping your device (by default 192.168.3.1), use ipconfig and set address manually if not
+ - be sure you'r able to ping your device (by default 192.168.3.1), use ipconfig and set address manually on your local interface if not.
  - Connect with Telnet on 192.168.3.1
  - Modify  /etc/inetd.conf to allow FTP to start in root
 
     change `21 stream tcp nowait root ftpd ftpd -w /data/ftp`    
-    to `21 stream tcp nowait root ftpd ftpd -w /`
+        to `21 stream tcp nowait root ftpd ftpd -w /`
     
- - get the name in /bin/updater/productname file (for renaming the firmware file)
+ - get the name in /bin/updater/productname file (used for renaming the firmware file in next step)
  - restart ftp serveur or reboot and re-press 4 times on power button
   
  - download latest (or the same) firmware on Parrot site (be careful to download the firmware for your drone)
@@ -74,8 +76,11 @@ If you Brick your Jumping :
  - Connect with FTP to 192.168.3.1  
  - upload firmware in /update folder
  - Wait 2 min (to be sure filesystem is flushed)
- - Reboot and Wait
+ - Reboot and Wait for update finished and Drone initialisation
  - It's all
+ 
+Notes :
+ - If you upload same firmware, Drone will still do the update, because update process have `-force` parameter... Thanks Parrot engineer !
   
   [1]: https://i.stack.imgur.com/0IaqO.png
   [2]: https://i.stack.imgur.com/z0OqL.png
