@@ -23,7 +23,7 @@ Installation:
  - Connect to Drone with FTP
  - Go to internal_000
  - Create folder wpa_supplicant
- - upload all files of this repository LinuxFiles folder
+ - upload all files that in LinuxFiles folder of this repository (not the folder)
  - Connect to Drone with Telnet
  - Go to /data/ftp/internal_000/wpa_supplicant
  - Check that all file haves execute right (use chmode if not)
