@@ -6,7 +6,7 @@ From longtime, I would to connect my Parrot jumping to my Enterprise network and
 But Now It's Possible:
 
 Requirement : 
- - Jumping Night/Race (EVO) Doesn't work on Sumo because no more RAM
+ - Jumping Night/Race (EVO) (work on Sumo but only with symlinks because no more RAM)
  - My CoyoteProd Libsumo.Net Application (or other application able to change the IPAddress to connect to drone)
  - Windows PC (not mandatory)
  
